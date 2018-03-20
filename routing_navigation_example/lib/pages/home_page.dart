@@ -11,18 +11,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  void _handleOnPressedPage1() {
-    Navigator.pushNamed(context, "/page1");
-  }
-
-  void _handleOnPressedPage2() {
-    Navigator.pushNamed(context, "/page2");
-  }
-
-  void _handleOnPressedPage3() {
-    Navigator.pushNamed(context, "/page3");
-  }
-
   @override
   Widget build(BuildContext context) {
     const EDGE_INSETS = 26.0;
@@ -38,21 +26,21 @@ class _HomePageState extends State<HomePage> {
             new Padding(
               padding: new EdgeInsets.all(EDGE_INSETS),
               child: new RaisedButton(
-                onPressed: _handleOnPressedPage1,
+                onPressed: () => Navigator.of(context).pushNamed("/page1"),
                 child: new Text("Go to Page 1"),
               ),
             ),
             new Padding(
               padding: new EdgeInsets.all(EDGE_INSETS),
               child: new RaisedButton(
-                onPressed: _handleOnPressedPage2,
+                onPressed: () => Navigator.of(context).pushNamed("/page2"),
                 child: new Text("Go to Page 2"),
               ),
             ),
             new Padding(
               padding: new EdgeInsets.all(EDGE_INSETS),
               child: new RaisedButton(
-                onPressed: _handleOnPressedPage3,
+                onPressed: () => Navigator.of(context).pushNamed("/page3"),
                 child: new Text("Go to Page 3"),
               ),
             ),
