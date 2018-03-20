@@ -25,6 +25,8 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    const EDGE_INSETS = 26.0;
+
     return new Scaffold(
       appBar: new AppBar(
         title: new Text(widget.title),
@@ -33,29 +35,22 @@ class _HomePageState extends State<HomePage> {
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            new Text(
-              'Home Page',
-              style: Theme
-                  .of(context)
-                  .textTheme
-                  .display1,
-            ),
             new Padding(
-              padding: new EdgeInsets.all(12.0),
+              padding: new EdgeInsets.all(EDGE_INSETS),
               child: new RaisedButton(
                 onPressed: _handleOnPressedPage1,
                 child: new Text("Go to Page 1"),
               ),
             ),
             new Padding(
-              padding: new EdgeInsets.all(12.0),
+              padding: new EdgeInsets.all(EDGE_INSETS),
               child: new RaisedButton(
                 onPressed: _handleOnPressedPage2,
                 child: new Text("Go to Page 2"),
               ),
             ),
             new Padding(
-              padding: new EdgeInsets.all(12.0),
+              padding: new EdgeInsets.all(EDGE_INSETS),
               child: new RaisedButton(
                 onPressed: _handleOnPressedPage3,
                 child: new Text("Go to Page 3"),
