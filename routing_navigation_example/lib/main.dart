@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:routing_navigation_example/pages/home_page.dart';
 import 'package:routing_navigation_example/pages/page1.dart';
+import 'package:routing_navigation_example/pages/page1_subpage1.dart';
+import 'package:routing_navigation_example/pages/page1_subpage2.dart';
 import 'package:routing_navigation_example/pages/page2.dart';
 import 'package:routing_navigation_example/pages/page3.dart';
 
@@ -19,6 +21,8 @@ class MyApp extends StatelessWidget {
         '/page1': (BuildContext context) => new Page1(),
         '/page2': (BuildContext context) => new Page2(),
         '/page3': (BuildContext context) => new Page3(),
+        '/page1_subpage1': (BuildContext context) => new Page1Subpage1(),
+        '/page1_subpage2': (BuildContext context) => new Page1Subpage2(),
       },
     );
   }

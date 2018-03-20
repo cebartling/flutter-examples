@@ -23,6 +23,20 @@ class _Page1State extends State<Page1> {
                   .textTheme
                   .display1,
             ),
+            new Padding(
+              padding: new EdgeInsets.all(12.0),
+              child: new RaisedButton(
+                onPressed: () => Navigator.of(context).pushNamed("/page1_subpage1"),
+                child: new Text("Go to subpage 1"),
+              ),
+            ),
+            new Padding(
+              padding: new EdgeInsets.all(12.0),
+              child: new RaisedButton(
+                onPressed: () => Navigator.of(context).pushNamed("/page1_subpage2"),
+                child: new Text("Go to subpage 2"),
+              ),
+            ),
           ],
         ),
       ),
